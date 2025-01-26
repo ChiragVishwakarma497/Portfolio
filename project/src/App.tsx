@@ -190,7 +190,7 @@ const projects: Project[] = [
     description: "Developed a functional system using Python and OpenCV for hands-free cursor control via eye tracking. Features include eye gaze tracking for movement, blinks/gestures for clicks, and innovative accessibility solutions for enhanced human-computer interaction.",
     technologies: ["Python:pyautogui:MediaPipe", "NLP"],
     imageUrl: "https://i.postimg.cc/vZQH74KW/DALL-E-2025-01-24-15-23-03-A-conceptual-illustration-of-an-eye-tracker-mouse-system-The-scene-fea.webp",
-    githubUrl: "hhttps://github.com/Chirag230861/EyeTracker",
+    githubUrl: "https://github.com/Chirag230861/EyeTracker",
   },
 ];
 
