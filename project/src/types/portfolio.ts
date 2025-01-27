@@ -9,7 +9,7 @@ export interface Education {
 
 export interface Skill {
   name: string;
-  category: 'frontend' | 'backend' | 'ai-data' | 'cloud' | 'tools' | 'other-skills';
+  category: 'frontend' | 'backend' | 'ai-data' | 'cloud' | 'tools' | 'Soft-Skills';
   level: number; // 0-100
   icon?: string;
 }
