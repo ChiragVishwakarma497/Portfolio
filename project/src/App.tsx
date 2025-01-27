@@ -138,25 +138,25 @@ const skills: Skill[] = [
   // Other Skills
   { 
     name: "Issue Resolution",
-    category: "other-skills",
+    category: "Soft-Skills",
     level: 88,
     icon: "https://www.shutterstock.com/image-vector/dispute-resolution-icon-vector-illustration-600nw-2300404219.jpg"
   },
   { 
     name: "Strategic Decision Making",
-    category: "other-skills",
+    category: "Soft-Skills",
     level: 85,
     icon: "https://cdn3.vectorstock.com/i/1000x1000/59/12/strategic-decisions-icon-from-global-business-vector-35875912.jpg"
   },
   { 
     name: "Task Execution",
-    category: "other-skills",
+    category: "Soft-Skills",
     level: 92,
     icon: "https://w7.pngwing.com/pngs/185/850/png-transparent-task-computer-icons-tasks-s-angle-text-microsoft-office-thumbnail.png"
   },
   { 
     name: "Communication",
-    category: "other-skills",
+    category: "Soft-Skills",
     level: 90,
     icon: "https://i.pinimg.com/736x/91/dd/0a/91dd0a85d3e1303b5b2d3768f7638583.jpg"
   }
@@ -166,7 +166,7 @@ const experiences: ExperienceType[] = [
   {
     company: "AutoWhat ChatBot Services",
     position: "AI Developer Intern",
-    startDate: "23/12/32024",
+    startDate: "23/12/2024",
     endDate: "Present",
     description: [
       "Leveraged state-of-the-art Large Language Models (LLMs) to design AI agents capable of interpreting natural language inputs for human-like task generation",
