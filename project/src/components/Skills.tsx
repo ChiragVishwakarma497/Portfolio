@@ -12,7 +12,7 @@ export function Skills({ skills }: SkillsProps) {
     'ai-data': 'AI & Data Science',
     'cloud': 'Cloud & Infrastructure',
     'tools': 'Tools & Technologies',
-    'other-skills': 'Other Skills'
+    'Soft-Skills': 'Soft-Skills'
   } as const;
 
   const renderSkills = (category: string, skills: Skill[]) => {
