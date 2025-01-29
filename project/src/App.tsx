@@ -12,7 +12,7 @@ const profile: Profile = {
   title: "AI & Chatbot Developer-Data Analyst",
   bio: "Passionate developer with expertise in building modern AI solutions. I specialize in data analysis, machine learning, and AI agents with a focus on creating impactful solutions.",
   avatar: "",
-  resumeUrl: "/Chirag_Vishwakarma_Resume.pdf",
+  resumeUrl: "/Chirag Vishwakarma Resume.pdf",
   github: "https://github.com/Chirag230861",
   linkedin: "http://www.linkedin.com/in/chirag-vishwakarma",
   instagram: "https://www.instagram.com/chiragggg.___"
