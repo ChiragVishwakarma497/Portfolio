@@ -192,13 +192,6 @@ const projects: Project[] = [
     imageUrl: "https://i.postimg.cc/vZQH74KW/DALL-E-2025-01-24-15-23-03-A-conceptual-illustration-of-an-eye-tracker-mouse-system-The-scene-fea.webp",
     githubUrl: "https://github.com/Chirag230861/EyeTracker",
   },
-  {
-     title: "Emotion-Based Music Recommendation System",
-    description: "Developed an AI project leveraging deep learning to detect useremotions via facial expressions and recommend suitable music based on their emotions. The system uses machine learning for real-time emotion analysis and music selection, enhancing user experience through personalized interaction.",
-    technologies: ["Python", "Machine Learning", "NLP"],
-    imageUrl: "https://i.postimg.cc/J0n39Yyq/DALL-E-2025-01-24-15-04-54-A-conceptual-illustration-of-an-emotion-based-music-recommender-system.webp",
-    githubUrl: "https://github.com/Chirag230861/Emotion-music-recommender-system",
-  },
 ];
 
 const contact: ContactType = {
