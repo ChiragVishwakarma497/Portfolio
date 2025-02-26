@@ -71,11 +71,13 @@ export function Hero({ profile }: HeroProps) {
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse" />
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
-                <img
-                  src={profile.avatar}
-                  alt={profile.name}
-                  className="relative w-64 h-64 object-cover rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] animate-float transition-transform duration-500 group-hover:scale-105"
-                />
+                <div className="relative w-64 h-64 rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] overflow-hidden animate-float transition-transform duration-500 group-hover:scale-105">
+                  <img
+                    src={profile.avatar}
+                    alt={profile.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>
