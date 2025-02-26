@@ -74,7 +74,7 @@ export function Hero({ profile }: HeroProps) {
                 <img
                   src={profile.avatar}
                   alt={profile.name}
-                  className="relative w-96 h-96 object-cover rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] animate-float transition-transform duration-500 group-hover:scale-105"
+                  className="relative w-64 h-64 object-cover rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] animate-float transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </div>
