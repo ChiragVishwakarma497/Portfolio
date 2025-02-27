@@ -15,13 +15,13 @@ export function Projects({ projects }: ProjectsProps) {
   };
 
   return (
-    <section id="projects" className="relative py-20 bg-gradient-to-br from-black to-indigo-950">
+    <section id="projects" className="relative py-12 sm:py-16 md:py-20 bg-gradient-to-br from-black to-indigo-950">
       <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.1)_1px,transparent_1px)] bg-[size:50px_50px] opacity-20" />
-      <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-5xl font-bold text-center mb-16 text-white [text-shadow:0_0_20px_rgba(99,102,241,0.5)]">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-white [text-shadow:0_0_20px_rgba(99,102,241,0.5)]">
           Projects
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-indigo-950/50 pr-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-h-[500px] sm:max-h-[550px] md:max-h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-indigo-600 scrollbar-track-indigo-950/50 pr-2 sm:pr-4">
           {projects.map((project) => (
             <div
               key={project.title}
@@ -36,22 +36,22 @@ export function Projects({ projects }: ProjectsProps) {
                   />
                 </div>
               )}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-white group-hover:text-indigo-400 transition-colors">
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 text-white group-hover:text-indigo-400 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <p className="text-sm sm:text-base text-gray-400 mb-3 sm:mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-sm bg-indigo-950/50 text-indigo-300 rounded-full border border-indigo-500/20"
+                      className="px-2 sm:px-3 py-0.5 sm:py-1 text-xs sm:text-sm bg-indigo-950/50 text-indigo-300 rounded-full border border-indigo-500/20"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-3 sm:gap-4">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
@@ -59,7 +59,7 @@ export function Projects({ projects }: ProjectsProps) {
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-indigo-400 transition-colors"
                     >
-                      <Github className="w-5 h-5" />
+                      <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
                   )}
                   {project.liveUrl && (
@@ -69,7 +69,7 @@ export function Projects({ projects }: ProjectsProps) {
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-indigo-400 transition-colors"
                     >
-                      <ExternalLink className="w-5 h-5" />
+                      <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
                   )}
                 </div>
@@ -79,10 +79,10 @@ export function Projects({ projects }: ProjectsProps) {
         </div>
       </div>
       <div 
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer animate-bounce-subtle"
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 cursor-pointer animate-bounce-subtle"
         onClick={scrollToNextSection}
       >
-        <ChevronDown className="w-8 h-8 text-indigo-400" />
+        <ChevronDown className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400" />
       </div>
     </section>
   );
