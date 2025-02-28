@@ -76,7 +76,7 @@ export function Hero({ profile }: HeroProps) {
                     <img
                       src={profile.avatar}
                       alt={profile.name}
-                      className="w-full h-full object-cover"
+                      className="max-w-full max-h-full object-contain"
                     />
                   </div>
                 </div>
