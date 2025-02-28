@@ -68,15 +68,26 @@ export function Hero({ profile }: HeroProps) {
           </div>
           <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
             <div className="relative">
+              {/* Glow effect behind the avatar */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse" />
+              
+              {/* Avatar container with glow border */}
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
+                
+                {/* This is the circular mask with the border */}
                 <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] overflow-hidden animate-float transition-transform duration-500 group-hover:scale-105">
-                  <div className="w-full h-full flex items-center justify-center bg-black/20">
+                  {/* Flex container to center the image */}
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-950/80 to-purple-950/80">
+                    {/* The image itself with object-contain to preserve aspect ratio */}
                     <img
                       src={profile.avatar}
                       alt={profile.name}
-                      className="max-w-full max-h-full object-contain"
+                      className="w-auto h-auto max-w-[90%] max-h-[90%] object-contain"
+                      style={{ 
+                        objectFit: 'contain',
+                        objectPosition: 'center'
+                      }}
                     />
                   </div>
                 </div>
