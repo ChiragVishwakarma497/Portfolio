@@ -88,7 +88,7 @@ const skills: Skill[] = [
     name: "GitHub",
     category: "tools",
     level: 85,
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+    icon: "https://www.pngplay.com/wp-content/uploads/12/GitHub-Background-PNG-Clip-Art.png"
   },
   {
     name: "VS Code",
