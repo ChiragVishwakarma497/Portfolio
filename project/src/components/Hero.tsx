@@ -26,10 +26,15 @@ export function Hero({ profile }: HeroProps) {
           <div className="w-full md:w-1/2 space-y-4 md:space-y-6 text-center md:text-left">
             <div className="space-y-2 md:space-y-3">
               <p className="text-indigo-400 font-medium animate-slide-in-left">Welcome to my portfolio</p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-slide-in-left animate-glow">
-                Hi, I'm {profile.name}
-               
-              </h1>
+              {''}
+              {''}
+              <div className="text-xl text-indigo-400 animate-slide-in-left">
+              Hi I'm  {'  '}
+                <span className="text-xl text-white">
+                
+                {profile.name}
+                </span>
+              </div>
               <h2 className="text-lg sm:text-xl md:text-2xl text-indigo-200 animate-slide-in-left">
                 {profile.title}
                 
