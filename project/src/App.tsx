@@ -192,6 +192,13 @@ const projects: Project[] = [
     imageUrl: "https://i.postimg.cc/vZQH74KW/DALL-E-2025-01-24-15-23-03-A-conceptual-illustration-of-an-eye-tracker-mouse-system-The-scene-fea.webp",
     githubUrl: "https://github.com/Chirag230861/EyeTracker",
   },
+  {
+    title: "E-Commerce Based Customer Segmentation Using AI-Insights",
+    description: "The Customer Segmentation Analyzer is an AI-powered tool that classifies e-commerce customers based on order frequency, spending habits, and return rates. Using machine learning, it identifies key segments and generates personalized marketing strategies. Businesses can leverage these insights to enhance customer engagement, improve retention, and boost revenue.",
+    technologies: ["Python: (Pandas, Matplotlib, Seaborn)", "K-Mean", "llm", "Groq"],
+    imageUrl: "",
+    githubUrl: "https://github.com/Chirag230861/E-Commerce-Customer-Segementation-Using-AI-Insights",
+  },
 ];
 
 const contact: ContactType = {
