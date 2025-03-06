@@ -75,19 +75,17 @@ export function Hero({ profile }: HeroProps) {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
                 
-                {/* This is the circular mask with the border */}
-                <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] overflow-hidden animate-float transition-transform duration-500 group-hover:scale-105">
-                  {/* Flex container to center the image */}
-                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-950/80 to-purple-950/80">
-                    {/* The image itself with object-contain to preserve aspect ratio */}
+                {/* Circular container with proper sizing */}
+                <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full border-4 border-indigo-500/50 shadow-[0_0_30px_rgba(99,102,241,0.5)] overflow-hidden animate-float transition-transform duration-500 group-hover:scale-105">
+                  {/* Background gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/80 to-purple-950/80"></div>
+                  
+                  {/* Image wrapper to maintain aspect ratio */}
+                  <div className="absolute inset-0 flex items-center justify-center">
                     <img
                       src={profile.avatar}
                       alt={profile.name}
-                      className="w-auto h-auto max-w-[90%] max-h-[90%] object-contain"
-                      style={{ 
-                        objectFit: 'contain',
-                        objectPosition: 'center'
-                      }}
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
