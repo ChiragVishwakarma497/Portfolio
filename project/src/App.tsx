@@ -8,11 +8,11 @@ import { Contact } from './components/Contact';
 import type { Profile, Skill, Experience as ExperienceType, Project, Contact as ContactType } from './types/portfolio';
 
 const profile: Profile = {
-  name: " Chirag Vishwakarma",
+  name: "Chirag Vishwakarma",
   title: "AI & Chatbot Developer-Data Analyst",
   bio: "Passionate developer with expertise in building modern AI solutions. I specialize in data analysis, machine learning, and AI agents with a focus on creating impactful solutions.",
-  avatar: "https://i.postimg.cc/gr9ch7sZ/Chirag.jpg",
-  resumeUrl: "/Chirag Vishwakarma Resume.pdf",
+  avatar: "https://i.postimg.cc/PxgTDwhb/Whats-App-Image-2025-01-25-at-00-17-02-021dfe20.jpg",
+  resumeUrl: "/Chirag_Vishwakarma_Resume.pdf",
   github: "https://github.com/Chirag230861",
   linkedin: "http://www.linkedin.com/in/chirag-vishwakarma",
   instagram: "https://www.instagram.com/chiragggg.___"
@@ -88,7 +88,7 @@ const skills: Skill[] = [
     name: "GitHub",
     category: "tools",
     level: 85,
-    icon: "https://i.postimg.cc/FsKkbQwk/pngimg-com-github-PNG44.png"
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
   },
   {
     name: "VS Code",
@@ -191,14 +191,6 @@ const projects: Project[] = [
     technologies: ["Python:pyautogui:MediaPipe", "NLP"],
     imageUrl: "https://i.postimg.cc/vZQH74KW/DALL-E-2025-01-24-15-23-03-A-conceptual-illustration-of-an-eye-tracker-mouse-system-The-scene-fea.webp",
     githubUrl: "https://github.com/Chirag230861/EyeTracker",
-  },
-  {
-    title: "E-Commerce Customer Segmentation Using AI Insights",
-    description: "The Customer Segmentation Analyzer is an AI-powered tool that classifies e-commerce customers based on order frequency, spending habits, and return rates. Using machine learning, it identifies key segments and generates personalized marketing strategies. Businesses can leverage these insights to enhance customer engagement, improve retention, and boost revenue.",
-    technologies: ["Python", "Streamlit", "Pandas", "Matplotlib", "Seaborn", "Groq"],
-    imageUrl: "https://i.postimg.cc/Njwy3wZM/DALL-E-2025-03-01-13-21-43-A-professional-and-visually-appealing-thumbnail-for-an-E-commerce-Custo.webp",
-    githubUrl: "https://github.com/Chirag230861/E-Commerce-Customer-Segementation-Using-AI-Insights",
-    LiveUrl: "https://e-commerce-customer-segementation-using-ai-insights.streamlit.app/"
   },
 ];
 
