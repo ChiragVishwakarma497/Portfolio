@@ -30,6 +30,7 @@ export function Hero({ profile }: HeroProps) {
                 Hi, I'm{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradient hover-scale">
                   {profile.name}
+                  {profile.name}
                 </span>
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl text-indigo-200 animate-slide-in-left">
