@@ -35,6 +35,7 @@ export function Hero({ profile }: HeroProps) {
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl text-indigo-200 animate-slide-in-left">
                 {profile.title}
+                {profile.name}
               </h2>
               <p className="text-sm sm:text-base text-gray-300 leading-relaxed animate-slide-in-left max-w-xl mx-auto md:mx-0">
                 {profile.bio}
