@@ -28,7 +28,7 @@ export function Hero({ profile }: HeroProps) {
               <p className="text-indigo-400 font-medium animate-slide-in-left">Welcome to my portfolio</p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-slide-in-left animate-glow">
                 Hi, I'm{' '}
-                <span className="bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradient hover-scale">
+                <span className="text-xl ">
                   {profile.name}
             
                 </span>
