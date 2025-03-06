@@ -28,14 +28,14 @@ export function Hero({ profile }: HeroProps) {
               <p className="text-indigo-400 font-medium animate-slide-in-left">Welcome to my portfolio</p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white animate-slide-in-left animate-glow">
                 Hi, I'm{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradient hover-scale">
+                <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradient hover-scale">
                   {profile.name}
-                  {profile.name}
-                </span>
+            
+                </div>
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl text-indigo-200 animate-slide-in-left">
                 {profile.title}
-                {profile.name}
+                
               </h2>
               <p className="text-sm sm:text-base text-gray-300 leading-relaxed animate-slide-in-left max-w-xl mx-auto md:mx-0">
                 {profile.bio}
