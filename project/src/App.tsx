@@ -205,7 +205,7 @@ const contact: ContactType = {
   email: "chiragvishwakarma520@gmail.com",
   phone: "8433675469",
   location: "Mumbai-97, Maharashtra",
-  github: "https://github.com/Chirag230861",
+  github: "https://github.com/ChiragVishwakarma497",
   linkedin: "http://www.linkedin.com/in/chirag-vishwakarma",
   instagram: "https://www.instagram.com/chiragggg.___"
 };
