@@ -1,5 +1,5 @@
-import React from 'react';
-import { Github, ExternalLink, ChevronDown } from 'lucide-react';
+import React, { useState } from 'react';
+import { Github, ExternalLink, ChevronDown, Play, Pause, Video, X } from 'lucide-react';
 import type { Project } from '../types/portfolio';
 
 interface ProjectsProps {
@@ -7,11 +7,34 @@ interface ProjectsProps {
 }
 
 export function Projects({ projects }: ProjectsProps) {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [showVideo, setShowVideo] = useState<string | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   const scrollToNextSection = () => {
     const nextSection = document.getElementById('contact');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleVideoClick = (videoUrl: string) => {
+    if (activeVideo === videoUrl) {
+      setActiveVideo(null);
+    } else {
+      setActiveVideo(videoUrl);
+    }
+  };
+
+  const openVideoModal = (project: Project) => {
+    setSelectedProject(project);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeVideoModal = () => {
+    setSelectedProject(null);
+    setActiveVideo(null);
+    document.body.style.overflow = 'unset';
   };
 
   return (
@@ -27,15 +50,13 @@ export function Projects({ projects }: ProjectsProps) {
               key={project.title}
               className="group bg-gradient-to-br from-indigo-950/50 to-purple-950/50 rounded-xl overflow-hidden border border-indigo-500/20 hover:border-indigo-500/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)]"
             >
-              {project.imageUrl && (
-                <div className="aspect-video overflow-hidden">
-                  <img
-                    src={project.imageUrl}
-                    alt={project.title}
-                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-              )}
+              <div className="aspect-video overflow-hidden relative">
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold mb-2 text-white group-hover:text-indigo-400 transition-colors">
                   {project.title}
@@ -51,7 +72,7 @@ export function Projects({ projects }: ProjectsProps) {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-3 sm:gap-4">
+                <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
@@ -72,6 +93,15 @@ export function Projects({ projects }: ProjectsProps) {
                       <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5" />
                     </a>
                   )}
+                  {project.videoUrl && (
+                    <button
+                      onClick={() => openVideoModal(project)}
+                      className="flex items-center gap-2 px-3 py-1 text-sm bg-indigo-600 text-white rounded-full hover:bg-indigo-700 transition-colors"
+                    >
+                      <Video className="w-4 h-4" />
+                      See Project Demo
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -84,6 +114,36 @@ export function Projects({ projects }: ProjectsProps) {
       >
         <ChevronDown className="w-6 h-6 sm:w-8 sm:h-8 text-indigo-400" />
       </div>
+
+      {/* Video Modal */}
+      {selectedProject && (
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <div className="relative bg-gradient-to-br from-indigo-950 to-black rounded-xl overflow-hidden max-w-4xl w-full">
+            <div className="absolute top-4 right-4 z-10">
+              <button
+                onClick={closeVideoModal}
+                className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+              >
+                <X className="w-6 h-6 text-white" />
+              </button>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold text-white mb-4">{selectedProject.title}</h3>
+              <div className="relative aspect-video rounded-lg overflow-hidden">
+                <video
+                  src={selectedProject.videoUrl}
+                  className="w-full h-full object-cover"
+                  controls
+                  autoPlay
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

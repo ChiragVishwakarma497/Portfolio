@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Experience } from '../types/portfolio';
 
 interface ExperienceProps {
@@ -13,7 +12,7 @@ export function Experience({ experiences }: ExperienceProps) {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-white [text-shadow:0_0_20px_rgba(99,102,241,0.5)]">
           Professional Journey
         </h2>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto overflow-hidden">
           <div className="space-y-8 sm:space-y-10 md:space-y-12">
             {experiences.map((exp, index) => (
               <div

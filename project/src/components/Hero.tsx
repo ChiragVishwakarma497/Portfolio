@@ -1,4 +1,3 @@
-import React from 'react';
 import { Github, Linkedin, Instagram, Download, ChevronDown } from 'lucide-react';
 import type { Profile } from '../types/portfolio';
 

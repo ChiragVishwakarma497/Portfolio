@@ -1,4 +1,3 @@
-import React from 'react';
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from 'lucide-react';
 import type { Contact } from '../types/portfolio';
 
@@ -21,13 +20,15 @@ export function Contact({ contact }: ContactProps) {
                 icon: Mail, 
                 title: 'Email', 
                 value: contact.email, 
-                href: `mailto:${contact.email}` 
+                href: `mailto:${contact.email}`,
+                isLink: true
               },
               { 
                 icon: Phone, 
                 title: 'Phone', 
                 value: contact.phone, 
-                href: `tel:${contact.phone}` 
+                href: `tel:${contact.phone}`,
+                isLink: true
               },
               { 
                 icon: MapPin, 
@@ -49,7 +50,7 @@ export function Contact({ contact }: ContactProps) {
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-sm sm:text-base text-gray-300 hover:text-indigo-400 transition-colors"
+                        className="text-sm sm:text-base text-gray-300 hover:text-indigo-400 transition-colors underline decoration-gray-300 hover:decoration-indigo-400"
                       >
                         {item.value}
                       </a>

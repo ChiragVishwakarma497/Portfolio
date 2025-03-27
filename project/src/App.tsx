@@ -1,4 +1,3 @@
-import React from 'react';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Skills } from './components/Skills';
@@ -12,7 +11,7 @@ const profile: Profile = {
   title: "AI & Chatbot Developer-Data Analyst",
   bio: "Passionate developer with expertise in building modern AI solutions. I specialize in data analysis, machine learning, and AI agents with a focus on creating impactful solutions.",
   avatar: "https://i.postimg.cc/tCzfr7fp/Chirag.jpg",
-  resumeUrl: "/Chirag Vishwakarma Resume.pdf",
+  resumeUrl: "/Chirag_Vishwakarma_Resume.pdf",
   github: "https://github.com/Chirag230861",
   linkedin: "http://www.linkedin.com/in/chirag-vishwakarma",
   instagram: "https://www.instagram.com/chiragggg.___"
@@ -182,21 +181,21 @@ const projects: Project[] = [
     title: "Emotion-Based Music Recommendation System",
     description: "Developed an AI project leveraging deep learning to detect useremotions via facial expressions and recommend suitable music based on their emotions. The system uses machine learning for real-time emotion analysis and music selection, enhancing user experience through personalized interaction.",
     technologies: ["Python", "Machine Learning", "NLP"],
-    imageUrl: "https://i.postimg.cc/J0n39Yyq/DALL-E-2025-01-24-15-04-54-A-conceptual-illustration-of-an-emotion-based-music-recommender-system.webp",
+    imageUrl: "https://assets.grok.com/users/a3654f62-3de3-4543-ab37-8c9a47ae5a2d/generated/dDYIjFzHmiC6PGWY/image.jpg",
     githubUrl: "https://github.com/Chirag230861/Emotion-music-recommender-system",
   },
   {
     title: "Eye-Tracker Mouse",
     description: "Developed a functional system using Python and OpenCV for hands-free cursor control via eye tracking. Features include eye gaze tracking for movement, blinks/gestures for clicks, and innovative accessibility solutions for enhanced human-computer interaction.",
     technologies: ["Python:pyautogui:MediaPipe", "NLP"],
-    imageUrl: "https://i.postimg.cc/vZQH74KW/DALL-E-2025-01-24-15-23-03-A-conceptual-illustration-of-an-eye-tracker-mouse-system-The-scene-fea.webp",
+    imageUrl: "https://assets.grok.com/users/a3654f62-3de3-4543-ab37-8c9a47ae5a2d/generated/ikrT5C6r0cGuYau6/image.jpg",
     githubUrl: "https://github.com/Chirag230861/EyeTracker",
   },
   {
     title: "E-Commerce Based Customer Segmentation Using AI-Insights",
     description: "The Customer Segmentation Analyzer is an AI-powered tool that classifies e-commerce customers based on order frequency, spending habits, and return rates. Using machine learning, it identifies key segments and generates personalized marketing strategies. Businesses can leverage these insights to enhance customer engagement, improve retention, and boost revenue.",
     technologies: ["Python: (Pandas, Matplotlib, Seaborn)", "K-Mean", "llm", "Groq"],
-    imageUrl: "",
+    imageUrl: "https://assets.grok.com/users/a3654f62-3de3-4543-ab37-8c9a47ae5a2d/generated/8f7ih4Mm7iA4PPbH/image.jpg",
     githubUrl: "https://github.com/Chirag230861/E-Commerce-Customer-Segementation-Using-AI-Insights",
   },
 ];
@@ -205,7 +204,7 @@ const contact: ContactType = {
   email: "chiragvishwakarma520@gmail.com",
   phone: "8433675469",
   location: "Mumbai-97, Maharashtra",
-  github: "https://github.com/ChiragVishwakarma497",
+  github: "https://github.com/Chirag230861",
   linkedin: "http://www.linkedin.com/in/chirag-vishwakarma",
   instagram: "https://www.instagram.com/chiragggg.___"
 };

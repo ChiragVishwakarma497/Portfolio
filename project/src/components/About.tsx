@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Profile } from '../types/portfolio';
 
 interface AboutProps {
@@ -13,7 +12,7 @@ export function About({ profile }: AboutProps) {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16 text-white [text-shadow:0_0_20px_rgba(99,102,241,0.5)]">
           About Me
         </h2>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto overflow-hidden">
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-300" />
             <div className="relative p-4 sm:p-6 md:p-8 bg-gradient-to-br from-indigo-950/50 to-purple-950/50 backdrop-blur-sm rounded-lg border border-indigo-500/20 hover:border-indigo-500/40 transition-all duration-300">
